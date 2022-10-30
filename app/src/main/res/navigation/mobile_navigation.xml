@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/tab1">
+
+    <fragment
+        android:id="@+id/tab1"
+        android:name="com.app.roleplayhelper.fragments.FragmentTab1"
+        android:label="First"
+        tools:layout="@layout/fragment_tab1" />
+
+    <fragment
+        android:id="@+id/tab2"
+        android:name="com.app.roleplayhelper.fragments.FragmentTab2"
+        android:label="Second"
+        tools:layout="@layout/fragment_tab2" />
+
+    <fragment
+        android:id="@+id/tab3"
+        android:name="com.app.roleplayhelper.fragments.FragmentTab3"
+        android:label="Third"
+        tools:layout="@layout/fragment_tab3" />
+
+    <fragment
+        android:id="@+id/tab4"
+        android:name="com.app.roleplayhelper.fragments.FragmentTab4"
+        android:label="Forth"
+        tools:layout="@layout/fragment_tab4" />
+
+  <fragment
+        android:id="@+id/tab5"
+        android:name="com.app.roleplayhelper.fragments.FragmentTab5"
+        android:label="Number 5"
+        tools:layout="@layout/fragment_tab5" />
+
+
+</navigation>

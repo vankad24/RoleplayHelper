@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentTab2">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Имя"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
+    <Button
+        android:id="@+id/minus_hp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="0dp"
+        android:text="-"
+        android:minWidth="1dp"
+        android:minHeight="1dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="@+id/text_hp"
+        app:layout_constraintEnd_toStartOf="@+id/text_hp"
+        app:layout_constraintTop_toTopOf="@+id/text_hp" />
+
+    <Button
+        android:id="@+id/plus_hp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_button"
+        android:minWidth="1dp"
+        android:minHeight="1dp"
+        android:padding="0dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/text_hp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="♥"
+        android:textSize="19sp"
+        android:textColor="#f00"
+        app:layout_constraintBottom_toBottomOf="@+id/plus_hp"
+        app:layout_constraintEnd_toStartOf="@+id/plus_hp"
+        app:layout_constraintTop_toTopOf="@+id/plus_hp"/>
+
+    <Button
+        android:id="@+id/minus_money"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="0dp"
+        android:text="-"
+        android:minWidth="1dp"
+        android:minHeight="1dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="@+id/text_money"
+        app:layout_constraintEnd_toStartOf="@+id/text_money"
+        app:layout_constraintTop_toTopOf="@+id/text_money" />
+
+    <Button
+        android:id="@+id/plus_money"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:minWidth="1dp"
+        android:minHeight="1dp"
+        android:padding="0dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="@+id/plus_hp"
+        app:layout_constraintTop_toBottomOf="@+id/plus_hp" />
+
+    <EditText
+        android:id="@+id/text_money"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCoin"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCoin"
+        app:layout_constraintTop_toTopOf="@+id/textViewCoin" />
+
+    <TextView
+        android:id="@+id/textViewCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="⬤"
+        android:textColor="#FAF500"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/plus_money"
+        app:layout_constraintEnd_toStartOf="@+id/plus_money"
+        app:layout_constraintTop_toTopOf="@+id/plus_money"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_money" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
